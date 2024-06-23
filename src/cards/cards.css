@@ -1,0 +1,60 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 100%; /* Full width of its container */
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap; /* Ensure cards do not wrap on larger screens */
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; 
+  flex: 1; /* Flex-grow to equally distribute space among cards */
+}
+
+.container h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.icon {
+  font-size: 24px;
+  color: #89CFF0;
+}
+
+.container p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-wrap: wrap; 
+  }
+  
+  .card {
+    flex: 1 1 100%;  
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    flex-direction: column; 
+  }
+
+  .card {
+    flex: 1 1 100%; 
+    margin-bottom: 20px;
+  }
+}

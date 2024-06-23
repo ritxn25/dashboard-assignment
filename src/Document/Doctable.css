@@ -1,0 +1,74 @@
+
+  .card-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .Doctable {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 55.5%;
+    text-align: left; 
+    margin-top: 2rem;
+    margin-left: 16.5%;;
+  }
+  
+  .container h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #89CFF0;
+  }
+  
+  .container p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  .document-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .document-table th,
+  .document-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border: none;
+  }
+  
+  .document-table th {
+    font-weight: bold;
+    background-color: #f2f2f2; 
+  }
+  
+  .document-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .status-send {
+    color: green;
+    background-color: rgba(0, 128, 0, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .status-pending {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1); 
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+  }
